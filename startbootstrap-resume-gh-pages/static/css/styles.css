@@ -16,7 +16,7 @@
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
-  --bs-orange: #bd5d38;
+  --bs-orange: #219EBC;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -183,6 +183,17 @@ address {
   font-style: normal;
   line-height: inherit;
 }
+.project-image {
+  overflow-x: auto; /* allows horizontal scrolling if the images exceed the container's width */
+}
+
+.dynamic-image {
+  height: auto;
+  margin-right: 10px; /* add some space between images */
+}
+
+
+
 
 ol,
 ul {
@@ -2848,19 +2859,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #bd5d38;
-  --bs-btn-border-color: #bd5d38;
+  --bs-btn-bg: #219EBC;
+  --bs-btn-border-color: #023047;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #c77556;
-  --bs-btn-hover-border-color: #c46d4c;
+  --bs-btn-hover-bg: ##1e7898;
+  --bs-btn-hover-border-color: #023047;
   --bs-btn-focus-shadow-rgb: 161, 79, 48;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #ca7d60;
-  --bs-btn-active-border-color: #c46d4c;
+  --bs-btn-active-bg: ##a8d5e5;
+  --bs-btn-active-border-color: #c46#a8d5e5d4c;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #bd5d38;
-  --bs-btn-disabled-border-color: #bd5d38;
+  --bs-btn-disabled-bg: #a8d5e5;
+  --bs-btn-disabled-border-color: #a8d5e5;
 }
 
 .btn-secondary {
@@ -2879,6 +2890,39 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #6c757d;
   --bs-btn-disabled-border-color: #6c757d;
 }
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+}
+
+.hobby-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.hobby-item i {
+  transform: scale(3)!important;
+  margin-bottom: 20px;
+}
+
+.hobby-item p {
+  font-size: 1.5em; /* Increased text size */
+}
+
+.hobby-item:hover {
+  transform: scale(1.1);
+}
+
 
 .btn-success {
   --bs-btn-color: #fff;
